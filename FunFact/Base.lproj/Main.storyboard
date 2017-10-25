@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFact" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyJ-4A-9i5">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2pt-Ap-nge"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="tintColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Show Another Fun Fact"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="2pt-Ap-nge"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="2pt-Ap-nge"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="showFact" destination="BYZ-38-t0r" eventType="touchUpInside" id="lpY-SA-Qnu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Did you know?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Z8-2P-Gh2">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You are born with 300 bones; by the time you are an adult you will have 206." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4y-xQ-ovB">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3529411764705882" green="0.73333333333333328" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FyJ-4A-9i5" secondAttribute="bottom" constant="80" id="0Ib-aH-dTH"/>
+                            <constraint firstItem="s4y-xQ-ovB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="FJ0-97-BrJ"/>
+                            <constraint firstItem="s4y-xQ-ovB" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" constant="20" id="J82-T5-f85"/>
+                            <constraint firstItem="3Z8-2P-Gh2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Rlx-nu-mdb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FyJ-4A-9i5" secondAttribute="trailing" constant="20" id="qMX-n2-9aC"/>
+                            <constraint firstItem="3Z8-2P-Gh2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="217" id="wOS-aS-gsX">
+                                <variation key="heightClass=regular-widthClass=compact" constant="220"/>
+                            </constraint>
+                            <constraint firstItem="s4y-xQ-ovB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="wST-cs-pK7"/>
+                            <constraint firstItem="FyJ-4A-9i5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="yXP-4u-RvJ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="FyJ-4A-9i5"/>
+                                <exclude reference="3Z8-2P-Gh2"/>
+                                <exclude reference="s4y-xQ-ovB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Rlx-nu-mdb"/>
+                                <exclude reference="wOS-aS-gsX"/>
+                                <exclude reference="FJ0-97-BrJ"/>
+                                <exclude reference="J82-T5-f85"/>
+                                <exclude reference="wST-cs-pK7"/>
+                                <exclude reference="qMX-n2-9aC"/>
+                                <exclude reference="yXP-4u-RvJ"/>
+                                <exclude reference="0Ib-aH-dTH"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="FyJ-4A-9i5"/>
+                                <include reference="3Z8-2P-Gh2"/>
+                                <include reference="s4y-xQ-ovB"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Rlx-nu-mdb"/>
+                                <include reference="wOS-aS-gsX"/>
+                                <include reference="FJ0-97-BrJ"/>
+                                <include reference="J82-T5-f85"/>
+                                <include reference="wST-cs-pK7"/>
+                                <include reference="qMX-n2-9aC"/>
+                                <include reference="yXP-4u-RvJ"/>
+                                <include reference="0Ib-aH-dTH"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="funFactButton" destination="FyJ-4A-9i5" id="JRd-Kj-J25"/>
+                        <outlet property="funFactLabel" destination="s4y-xQ-ovB" id="PLt-7I-NmD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="498" y="351.75"/>
+        </scene>
+    </scenes>
+</document>
